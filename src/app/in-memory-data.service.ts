@@ -27,7 +27,7 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 108, quoteNumber: 'AC127PC', lineOfBusiness: 15 }
     ];
 
-    return {linesOfBusiness};
+    return {linesOfBusiness, recentQuotes} ;
   }
 
   // Overrides the genId method to ensure that a line of business always has an id.
@@ -38,4 +38,6 @@ export class InMemoryDataService implements InMemoryDbService {
   genId(linesOfBusiness: LineOfBusiness[]): number {
     return linesOfBusiness.length > 0 ? Math.max(...linesOfBusiness.map(lineOfBusiness => lineOfBusiness.id)) + 1 : 11;
   }
+
+  
 }
