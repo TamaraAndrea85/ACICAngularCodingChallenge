@@ -6,9 +6,9 @@ import { SummedQuotes } from '../summed_quotes';
 @Component({
   selector: 'app-popular_lines_of_business',
   templateUrl: './popular_lines_of_business.component.html',
-  styleUrls: ['./popular_lines_of_business.component.css']
+ styleUrls: ['./popular_lines_of_business.component.css']
 })
-export class TopLinesOfBusinessComponent implements OnInit {
+export class PopularLinesOfBusinessComponent implements OnInit {
 
  
   quotes: SummedQuotes[] = [];
